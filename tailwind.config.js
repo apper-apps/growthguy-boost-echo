@@ -6,10 +6,10 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
+colors: {
         neon: {
-          green: '#00FF41',
-          green2: '#00CC33',
+          green: '#a9fb50',
+          green2: '#87d93c',
           lime: '#39FF14',
           yellow: '#FFD700',
           red: '#FF0040',
@@ -23,23 +23,20 @@ export default {
       },
       fontFamily: {
         'display': ['Bebas Neue', 'cursive'],
-        'body': ['Inter', 'sans-serif'],
+        'body': ['SF Pro Display', 'SF Pro Text', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
-        'neon': '0 0 20px #00FF41',
-        'neon-strong': '0 0 40px #00FF41',
         'card': '0 8px 32px rgba(0, 0, 0, 0.3)',
-        'card-hover': '0 12px 48px rgba(0, 255, 65, 0.1)',
       },
       animation: {
         'pulse-neon': 'pulse-neon 2s ease-in-out infinite alternate',
         'float': 'float 3s ease-in-out infinite',
         'counter': 'counter 2s ease-out forwards',
       },
-      keyframes: {
+keyframes: {
         'pulse-neon': {
-          '0%': { boxShadow: '0 0 20px #00FF41' },
-          '100%': { boxShadow: '0 0 40px #00FF41, 0 0 60px #00FF41' }
+          '0%': { boxShadow: '0 0 20px #a9fb50' },
+          '100%': { boxShadow: '0 0 40px #a9fb50, 0 0 60px #a9fb50' }
         },
         'float': {
           '0%, 100%': { transform: 'translateY(0px)' },
