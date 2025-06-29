@@ -84,8 +84,6 @@ html {
   background: #D8EFD3;
   border-radius: 4px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
-  background: #primary;
-}
+  background: var(--primary-500);
 }
