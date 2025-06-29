@@ -12,7 +12,7 @@ const HeroSection = () => {
   ];
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-dark-bg via-dark-bg to-dark-card">
+<section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-light-bg via-pastel-blue/10 to-pastel-sage/10">
       {/* Animated background elements */}
       <div className="absolute inset-0">
         <motion.div
@@ -22,7 +22,7 @@ const HeroSection = () => {
             opacity: [0.1, 0.3, 0.1]
           }}
           transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-          className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-neon-green/20 to-neon-lime/10 rounded-full blur-3xl"
+className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-pastel-sage/20 to-pastel-peach/10 rounded-full blur-3xl"
         />
         <motion.div
           animate={{
@@ -31,7 +31,7 @@ const HeroSection = () => {
             opacity: [0.1, 0.2, 0.1]
           }}
           transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-          className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-l from-neon-lime/20 to-neon-green/10 rounded-full blur-3xl"
+className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-l from-pastel-peach/20 to-pastel-sage/10 rounded-full blur-3xl"
         />
       </div>
 
@@ -53,7 +53,7 @@ const HeroSection = () => {
                 transition={{ duration: 0.8, delay: 0.2 }}
 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight"
               >
-                <span className="text-white">Fractional CMO Who Delivered</span>{' '}
+<span className="text-gray-800">Fractional CMO Who Delivered</span>{' '}
                 <span className="text-gradient">25X Revenue Growth</span>
               </motion.h1>
               
@@ -61,10 +61,10 @@ className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="text-xl md:text-2xl text-gray-300 max-w-2xl"
+className="text-xl md:text-2xl text-gray-600 max-w-2xl"
               >
                 Strategic excellence for SaaS, E-commerce & Real Estate companies 
-                ready to scale from <span className="text-neon-green font-semibold">10L to 50Cr+ revenue</span>
+                ready to scale from <span className="text-green-700 font-semibold">10L to 50Cr+ revenue</span>
               </motion.p>
             </div>
 
@@ -98,18 +98,18 @@ className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.8 }}
-              className="flex flex-wrap items-center gap-6 pt-6 border-t border-dark-border"
+className="flex flex-wrap items-center gap-6 pt-6 border-t border-light-border"
             >
-              <div className="flex items-center gap-2 text-sm text-gray-400">
-                <ApperIcon name="Shield" size={16} className="text-neon-green" />
+              <div className="flex items-center gap-2 text-sm text-gray-600">
+                <ApperIcon name="Shield" size={16} className="text-green-700" />
                 <span>30-day guarantee</span>
               </div>
-              <div className="flex items-center gap-2 text-sm text-gray-400">
-                <ApperIcon name="Users" size={16} className="text-neon-green" />
+              <div className="flex items-center gap-2 text-sm text-gray-600">
+                <ApperIcon name="Users" size={16} className="text-green-700" />
                 <span>50+ companies helped</span>
               </div>
-              <div className="flex items-center gap-2 text-sm text-gray-400">
-                <ApperIcon name="Award" size={16} className="text-neon-green" />
+              <div className="flex items-center gap-2 text-sm text-gray-600">
+                <ApperIcon name="Award" size={16} className="text-green-700" />
                 <span>9+ years experience</span>
               </div>
             </motion.div>
@@ -126,11 +126,11 @@ className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight
             <div className="relative">
               <motion.div
                 whileHover={{ scale: 1.02 }}
-                className="aspect-square bg-gradient-to-br from-dark-card to-dark-bg rounded-2xl border-2 border-neon-green/30 p-8 shadow-neon"
+className="aspect-square bg-gradient-to-br from-light-card to-pastel-blue/20 rounded-2xl border-2 border-pastel-sage/40 p-8 shadow-lg"
               >
                 {/* Placeholder for professional photo */}
-                <div className="w-full h-2/3 bg-gradient-to-br from-neon-green/10 to-neon-lime/5 rounded-xl flex items-center justify-center mb-6">
-                  <ApperIcon name="User" size={120} className="text-neon-green/50" />
+<div className="w-full h-2/3 bg-gradient-to-br from-pastel-sage/20 to-pastel-peach/10 rounded-xl flex items-center justify-center mb-6">
+                  <ApperIcon name="User" size={120} className="text-green-600/60" />
                 </div>
                 
                 {/* Growth chart overlay */}
@@ -139,9 +139,9 @@ className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight
                     initial={{ width: 0 }}
                     animate={{ width: '100%' }}
                     transition={{ duration: 2, delay: 1 }}
-                    className="h-16 bg-gradient-to-r from-neon-green to-neon-lime rounded-lg opacity-80 flex items-center justify-center"
+className="h-16 bg-gradient-to-r from-pastel-sage to-pastel-peach rounded-lg opacity-80 flex items-center justify-center"
                   >
-                    <ApperIcon name="TrendingUp" size={32} className="text-dark-bg" />
+                    <ApperIcon name="TrendingUp" size={32} className="text-gray-800" />
                   </motion.div>
                 </div>
               </motion.div>
@@ -154,7 +154,7 @@ className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight
                     initial={{ opacity: 0, scale: 0 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: 1 + index * 0.2 }}
-                    className="bg-dark-card border border-neon-green/30 rounded-lg p-4 shadow-card backdrop-blur-sm"
+className="bg-light-card border border-pastel-sage/40 rounded-lg p-4 shadow-md backdrop-blur-sm"
                   >
                     <MetricCard {...result} delay={index * 0.1} />
                   </motion.div>
@@ -175,7 +175,7 @@ className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="flex flex-col items-center gap-2 text-gray-400"
+className="flex flex-col items-center gap-2 text-gray-600"
         >
           <span className="text-sm">Scroll to explore</span>
           <ApperIcon name="ChevronDown" size={20} />

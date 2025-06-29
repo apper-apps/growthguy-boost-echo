@@ -32,7 +32,7 @@ const ProblemSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-dark-bg to-dark-card">
+<section className="py-20 bg-gradient-to-br from-light-bg to-pastel-blue/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           
@@ -50,14 +50,14 @@ const ProblemSection = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className="inline-flex items-center gap-2 px-4 py-2 bg-neon-red/10 border border-neon-red/30 rounded-full text-neon-red text-sm"
+className="inline-flex items-center gap-2 px-4 py-2 bg-pastel-peach/20 border border-pastel-peach/50 rounded-full text-orange-600 text-sm"
               >
                 <ApperIcon name="AlertTriangle" size={16} />
                 <span>Critical Growth Challenge</span>
               </motion.div>
 
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white leading-tight">
-                <span className="text-neon-red">87%</span> of Growth Strategies 
+<span className="text-orange-600">87%</span> of Growth Strategies
                 Become Outdated Within{' '}
                 <span className="text-gradient">6 Months</span>
               </h2>
@@ -69,12 +69,12 @@ const ProblemSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="p-6 bg-gradient-to-r from-neon-green/10 to-neon-lime/5 border border-neon-green/30 rounded-xl"
+className="p-6 bg-gradient-to-r from-pastel-sage/20 to-pastel-peach/10 border border-pastel-sage/40 rounded-xl"
             >
-              <h3 className="text-2xl font-display text-neon-green mb-3">
+<h3 className="text-2xl font-display text-green-700 mb-3">
                 What if you had a single strategic partner who owns your growth results?
               </h3>
-              <p className="text-gray-300">
+<p className="text-gray-600">
                 Transform fragmented efforts into a unified growth engine that adapts and scales with market changes.
               </p>
             </motion.div>
@@ -105,17 +105,17 @@ const ProblemSection = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.1 * index }}
                 whileHover={{ x: 5 }}
-                className="flex items-start gap-4 p-6 bg-dark-card border border-dark-border rounded-xl hover:border-neon-red/30 transition-all duration-300 group"
+className="flex items-start gap-4 p-6 bg-light-card border border-light-border rounded-xl hover:border-pastel-peach/50 transition-all duration-300 group shadow-sm"
               >
-                <div className="flex-shrink-0 w-12 h-12 bg-neon-red/10 rounded-lg flex items-center justify-center group-hover:bg-neon-red/20 transition-colors duration-300">
-                  <ApperIcon name="X" size={20} className="text-neon-red" />
+                <div className="flex-shrink-0 w-12 h-12 bg-pastel-peach/20 rounded-lg flex items-center justify-center group-hover:bg-pastel-peach/30 transition-colors duration-300">
+                  <ApperIcon name="X" size={20} className="text-orange-600" />
                 </div>
                 
                 <div className="space-y-2">
-                  <h4 className="text-lg font-semibold text-white group-hover:text-neon-red transition-colors duration-300">
+<h4 className="text-lg font-semibold text-gray-800 group-hover:text-orange-600 transition-colors duration-300">
                     {problem.title}
                   </h4>
-                  <p className="text-gray-400 text-sm">
+<p className="text-gray-600 text-sm">
                     {problem.description}
                   </p>
                 </div>
