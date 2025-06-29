@@ -33,12 +33,7 @@ body {
   }
   
 .card-pastel {
-    @apply bg-neutral-card border-2 border-pastel-green/40 rounded-xl p-6 transition-all duration-300 hover:border-pastel-green/70 hover:-translate-y-1 flex flex-col min-h-full shadow-sm;
-  }
-  
-.text-primary {
-    @apply text-primary;
-  }
+  @apply bg-neutral-card border-2 border-pastel-green/40 rounded-xl p-6 transition-all duration-300 hover:border-pastel-green/70 hover:-translate-y-1 flex flex-col min-h-full shadow-sm;
 }
 
 /* Toast Notification Styles */
@@ -86,4 +81,5 @@ html {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary-500);
+}
 }
