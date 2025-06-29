@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
+import { motion } from "framer-motion";
+import React, { useEffect, useState } from "react";
 
 const MetricCard = ({ value, suffix, label, delay = 0, className = '' }) => {
   const [displayValue, setDisplayValue] = useState(0);
@@ -39,7 +39,7 @@ const MetricCard = ({ value, suffix, label, delay = 0, className = '' }) => {
     }, duration / steps);
   };
 
-  return (
+return (
     <motion.div
       id={`metric-${label}`}
       initial={{ opacity: 0, y: 20 }}
@@ -48,7 +48,7 @@ const MetricCard = ({ value, suffix, label, delay = 0, className = '' }) => {
       className={`text-center space-y-2 ${className}`}
     >
       <motion.div
-        className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gradient glow-text"
+        className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gradient"
         animate={isVisible ? { scale: [1, 1.1, 1] } : {}}
         transition={{ duration: 0.5, delay: 0.5 }}
       >

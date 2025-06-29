@@ -51,10 +51,10 @@ const HeroSection = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight"
+className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight"
               >
                 <span className="text-white">Fractional CMO Who Delivered</span>{' '}
-                <span className="text-gradient glow-text">25X Revenue Growth</span>
+                <span className="text-gradient">25X Revenue Growth</span>
               </motion.h1>
               
               <motion.p

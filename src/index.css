@@ -26,24 +26,18 @@ body {
 @layer components {
 .btn-neon {
     @apply relative overflow-hidden bg-gradient-to-r from-neon-green to-neon-green2 text-dark-bg font-bold py-4 px-8 rounded-xl transition-all duration-300 hover:scale-105;
-    clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%);
   }
   
   .btn-neon-outline {
     @apply relative border-2 border-neon-green text-neon-green font-bold py-4 px-8 rounded-xl transition-all duration-300 hover:bg-neon-green hover:text-dark-bg;
-    clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%);
   }
   
-  .card-neon {
-    @apply bg-dark-card border-2 border-neon-green/20 rounded-xl p-6 transition-all duration-300 hover:border-neon-green/50 hover:-translate-y-2;
+.card-neon {
+    @apply bg-dark-card border-2 border-neon-green/20 rounded-xl p-6 transition-all duration-300 hover:border-neon-green/50 hover:-translate-y-2 flex flex-col min-h-full;
   }
   
   .text-gradient {
     @apply bg-gradient-to-r from-neon-green to-neon-lime bg-clip-text text-transparent;
-  }
-  
-.glow-text {
-    text-shadow: 0 0 10px #a9fb50;
   }
 }
 
