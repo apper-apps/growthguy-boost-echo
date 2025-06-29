@@ -24,7 +24,7 @@ const HomePage = () => {
 
   if (loading) {
     return (
-<div className="min-h-screen bg-neutral-light flex items-center justify-center">
+      <div className="min-h-screen bg-dark-bg flex items-center justify-center">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -40,9 +40,9 @@ const HomePage = () => {
               repeat: Infinity,
               ease: "easeInOut"
             }}
-className="w-16 h-16 border-4 border-primary border-t-transparent rounded-full mx-auto"
+            className="w-16 h-16 border-4 border-neon-green border-t-transparent rounded-full mx-auto"
           />
-          <div className="text-primary font-display text-xl">
+          <div className="text-neon-green font-display text-xl">
             Loading Growth Strategies...
           </div>
         </motion.div>
@@ -55,7 +55,7 @@ className="w-16 h-16 border-4 border-primary border-t-transparent rounded-full m
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-className="min-h-screen bg-neutral-light"
+      className="min-h-screen bg-dark-bg"
     >
       <div id="home">
         <HeroSection />

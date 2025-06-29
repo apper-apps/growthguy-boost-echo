@@ -1,16 +1,16 @@
 export const COLORS = {
-  primary: '#E2FF65',
-  pastel: {
-    blue: '#D2E0FB',
-    green: '#D8EFD3',
-    pink: '#F8E8EE',
-    yellow: '#FFF2CC',
+  neon: {
+    green: '#00FF41',
+    green2: '#00CC33',
+    lime: '#39FF14',
+    yellow: '#FFD700',
+    red: '#FF0040',
+    blue: '#00E5FF',
   },
-  neutral: {
-    black: '#24272F',
-    light: '#FAFAFA',
-    card: '#FFFFFF',
-    border: '#E5E5E5',
+  dark: {
+    bg: '#0A0A0A',
+    card: '#1A1A1A',
+    border: '#333333',
   }
 };
 

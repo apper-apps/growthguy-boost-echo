@@ -17,15 +17,15 @@ const Input = ({
   return (
     <div className={`space-y-2 ${className}`}>
       {label && (
-<label className="block text-sm font-medium text-gray-700 mb-2">
+        <label className="block text-sm font-medium text-gray-300 mb-2">
           {label}
-          {required && <span className="text-red-500 ml-1">*</span>}
+          {required && <span className="text-neon-red ml-1">*</span>}
         </label>
       )}
       
       <div className="relative">
         {icon && (
-<div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500">
+          <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400">
             <ApperIcon name={icon} size={20} />
           </div>
         )}
@@ -37,18 +37,18 @@ const Input = ({
           onChange={onChange}
           disabled={disabled}
           required={required}
-whileFocus={{ 
-            borderColor: '#E2FF65',
-            boxShadow: '0 0 0 1px #E2FF65'
+          whileFocus={{ 
+            borderColor: '#00FF41',
+            boxShadow: '0 0 0 1px #00FF41'
           }}
           className={`
-w-full px-4 py-3 bg-neutral-card border-2 border-neutral-border rounded-lg
-            text-neutral-black placeholder-gray-500
-            focus:border-primary focus:outline-none
+            w-full px-4 py-3 bg-dark-card border-2 border-dark-border rounded-lg
+            text-white placeholder-gray-500
+            focus:border-neon-green focus:outline-none
             disabled:opacity-50 disabled:cursor-not-allowed
             transition-all duration-300
             ${icon ? 'pl-12' : ''}
-            ${error ? 'border-red-500' : ''}
+            ${error ? 'border-neon-red' : ''}
           `}
           {...props}
         />
@@ -58,7 +58,7 @@ w-full px-4 py-3 bg-neutral-card border-2 border-neutral-border rounded-lg
         <motion.p
           initial={{ opacity: 0, y: -5 }}
           animate={{ opacity: 1, y: 0 }}
-className="text-sm text-red-500 flex items-center gap-1"
+          className="text-sm text-neon-red flex items-center gap-1"
         >
           <ApperIcon name="AlertCircle" size={16} />
           {error}

@@ -31,7 +31,7 @@ const Header = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
-className="fixed top-0 left-0 right-0 z-50 bg-neutral-card/90 backdrop-blur-md border-b border-neutral-border"
+      className="fixed top-0 left-0 right-0 z-50 bg-dark-bg/90 backdrop-blur-md border-b border-dark-border"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
@@ -62,7 +62,7 @@ className="fixed top-0 left-0 right-0 z-50 bg-neutral-card/90 backdrop-blur-md b
           <motion.button
             whileTap={{ scale: 0.95 }}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-className="lg:hidden p-2 text-gray-600 hover:text-primary transition-colors"
+            className="lg:hidden p-2 text-gray-400 hover:text-neon-green transition-colors"
           >
             <ApperIcon 
               name={isMobileMenuOpen ? 'X' : 'Menu'} 
@@ -79,7 +79,7 @@ className="lg:hidden p-2 text-gray-600 hover:text-primary transition-colors"
             opacity: isMobileMenuOpen ? 1 : 0
           }}
           transition={{ duration: 0.3 }}
-className="lg:hidden overflow-hidden border-t border-neutral-border"
+          className="lg:hidden overflow-hidden border-t border-dark-border"
         >
           <div className="py-4 space-y-4">
             <NavigationMenu
@@ -88,7 +88,7 @@ className="lg:hidden overflow-hidden border-t border-neutral-border"
               onItemClick={scrollToSection}
               isMobile={true}
             />
-<div className="pt-4 border-t border-neutral-border">
+            <div className="pt-4 border-t border-dark-border">
               <Button 
                 variant="primary" 
                 size="sm"

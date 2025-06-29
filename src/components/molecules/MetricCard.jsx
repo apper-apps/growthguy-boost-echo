@@ -48,13 +48,13 @@ return (
       className={`text-center space-y-2 ${className}`}
     >
       <motion.div
-className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-primary"
+        className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gradient"
         animate={isVisible ? { scale: [1, 1.1, 1] } : {}}
         transition={{ duration: 0.5, delay: 0.5 }}
       >
         {displayValue}{suffix}
       </motion.div>
-<div className="text-sm md:text-base text-gray-600 uppercase tracking-wider">
+      <div className="text-sm md:text-base text-gray-400 uppercase tracking-wider">
         {label}
       </div>
     </motion.div>

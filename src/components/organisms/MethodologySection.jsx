@@ -54,7 +54,7 @@ const MethodologySection = () => {
   ];
 
   return (
-<section className="py-20 bg-pastel-yellow/10">
+    <section className="py-20 bg-gradient-to-br from-dark-card to-dark-bg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
@@ -91,7 +91,7 @@ const MethodologySection = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="relative mb-16"
         >
-<div className="absolute top-1/2 left-0 right-0 h-0.5 bg-primary transform -translate-y-1/2" />
+          <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-neon-green via-neon-lime to-neon-green transform -translate-y-1/2" />
           
           <div className="flex justify-between items-center">
             {phases.map((phase, index) => (
@@ -102,15 +102,15 @@ const MethodologySection = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 * index }}
                 className={`w-4 h-4 rounded-full ${
-activePhase >= phase.number 
-                    ? 'bg-primary shadow-lg' 
-                    : 'bg-neutral-border'
+                  activePhase >= phase.number 
+                    ? 'bg-neon-green shadow-neon' 
+                    : 'bg-dark-border'
                 }`}
               />
             ))}
           </div>
 
-<div className="flex justify-between mt-4 text-sm text-gray-600">
+          <div className="flex justify-between mt-4 text-sm text-gray-400">
             <span>Week 1-2</span>
             <span>Week 3-4</span>
             <span>Week 5-8</span>
@@ -124,13 +124,13 @@ activePhase >= phase.number
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-className="text-center space-y-6 p-8 bg-pastel-green/20 border border-pastel-green/40 rounded-2xl"
+          className="text-center space-y-6 p-8 bg-gradient-to-r from-neon-green/10 to-neon-lime/5 border border-neon-green/20 rounded-2xl"
         >
-<h3 className="text-3xl font-display text-neutral-black">
+          <h3 className="text-3xl font-display text-white">
             Ready to start your transformation?
           </h3>
           
-<p className="text-gray-600 max-w-2xl mx-auto">
+          <p className="text-gray-400 max-w-2xl mx-auto">
             Join the companies that have achieved predictable, scalable growth through 
             our proven 4-phase methodology.
           </p>

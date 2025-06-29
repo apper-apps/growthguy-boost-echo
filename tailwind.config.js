@@ -7,18 +7,18 @@ export default {
   theme: {
     extend: {
 colors: {
-        primary: '#E2FF65',
-        pastel: {
-          blue: '#D2E0FB',
-          green: '#D8EFD3',
-          pink: '#F8E8EE',
-          yellow: '#FFF2CC',
+        neon: {
+          green: '#a9fb50',
+          green2: '#87d93c',
+          lime: '#39FF14',
+          yellow: '#FFD700',
+          red: '#FF0040',
+          blue: '#00E5FF',
         },
-        neutral: {
-          black: '#24272F',
-          light: '#FAFAFA',
-          card: '#FFFFFF',
-          border: '#E5E5E5',
+        dark: {
+          bg: '#0A0A0A',
+          card: '#1A1A1A',
+          border: '#333333',
         }
       },
       fontFamily: {
@@ -34,9 +34,9 @@ colors: {
         'counter': 'counter 2s ease-out forwards',
       },
 keyframes: {
-'pulse-primary': {
-          '0%': { boxShadow: '0 0 10px #E2FF65' },
-          '100%': { boxShadow: '0 0 20px #E2FF65' }
+        'pulse-neon': {
+          '0%': { boxShadow: '0 0 20px #a9fb50' },
+          '100%': { boxShadow: '0 0 40px #a9fb50, 0 0 60px #a9fb50' }
         },
         'float': {
           '0%, 100%': { transform: 'translateY(0px)' },

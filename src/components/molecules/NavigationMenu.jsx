@@ -17,8 +17,8 @@ const NavigationMenu = ({ items, activeItem, onItemClick, isMobile = false }) =>
           whileTap={{ scale: 0.95 }}
           className={`relative px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg ${
             activeItem === item.id
-? 'text-primary bg-primary/10'
-              : 'text-gray-700 hover:text-primary hover:bg-primary/5'
+              ? 'text-neon-green bg-neon-green/10'
+              : 'text-gray-300 hover:text-neon-green hover:bg-neon-green/5'
           }`}
         >
           <div className="flex items-center gap-2">
@@ -26,7 +26,7 @@ const NavigationMenu = ({ items, activeItem, onItemClick, isMobile = false }) =>
               <ApperIcon 
                 name={item.icon} 
                 size={16} 
-className={activeItem === item.id ? 'text-primary' : 'text-gray-500'}
+                className={activeItem === item.id ? 'text-neon-green' : 'text-gray-400'} 
               />
             )}
             {item.label}
@@ -36,7 +36,7 @@ className={activeItem === item.id ? 'text-primary' : 'text-gray-500'}
           {activeItem === item.id && (
             <motion.div
               layoutId="activeIndicator"
-className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-primary rounded-full"
+              className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-neon-green rounded-full"
               initial={false}
               transition={{ type: "spring", stiffness: 500, damping: 30 }}
             />
@@ -48,7 +48,7 @@ className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-prim
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-className="absolute inset-0 bg-primary/5 rounded-lg -z-10"
+              className="absolute inset-0 bg-neon-green/5 rounded-lg -z-10"
             />
           )}
         </motion.button>

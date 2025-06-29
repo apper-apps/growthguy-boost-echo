@@ -41,7 +41,7 @@ const CTASection = () => {
   };
 
   return (
-<section className="py-20 bg-pastel-pink/10 relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-br from-dark-bg via-dark-card to-dark-bg relative overflow-hidden">
       {/* Animated background */}
       <div className="absolute inset-0">
         <motion.div
@@ -51,7 +51,7 @@ const CTASection = () => {
             opacity: [0.1, 0.3, 0.1]
           }}
           transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-className="absolute top-0 left-0 w-full h-full bg-pastel-pink/20 blur-3xl"
+          className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-neon-green/10 to-neon-lime/5 blur-3xl"
         />
       </div>
 
@@ -68,22 +68,22 @@ className="absolute top-0 left-0 w-full h-full bg-pastel-pink/20 blur-3xl"
           >
             <div className="space-y-6">
               <motion.div
-animate={{ boxShadow: ['0 0 10px #F8E8EE', '0 0 20px #F8E8EE', '0 0 10px #F8E8EE'] }}
+                animate={{ boxShadow: ['0 0 20px #FF0040', '0 0 40px #FF0040', '0 0 20px #FF0040'] }}
                 transition={{ duration: 2, repeat: Infinity }}
-                className="inline-flex items-center gap-2 px-4 py-2 bg-pastel-pink/30 border border-pastel-pink/50 rounded-full text-pink-600 text-sm"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-neon-red/10 border border-neon-red/30 rounded-full text-neon-red text-sm"
               >
                 <ApperIcon name="Clock" size={16} />
                 <span>Limited Availability</span>
               </motion.div>
 
-<h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-neutral-black leading-tight">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white leading-tight">
                 Ready to Scale with{' '}
-                <span className="text-primary">Strategic Excellence?</span>
+                <span className="text-gradient">Strategic Excellence?</span>
               </h2>
               
-<p className="text-xl text-gray-600">
+              <p className="text-xl text-gray-400">
                 Limited slots available for Q1 2025. Premium growth strategies 
-                for companies committed to <span className="text-primary font-semibold">10X results</span>.
+                for companies committed to <span className="text-neon-green font-semibold">10X results</span>.
               </p>
             </div>
 
@@ -93,17 +93,17 @@ animate={{ boxShadow: ['0 0 10px #F8E8EE', '0 0 20px #F8E8EE', '0 0 10px #F8E8EE
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
-className="p-6 bg-pastel-pink/20 border border-pastel-pink/40 rounded-xl"
+              className="p-6 bg-gradient-to-r from-neon-red/10 to-neon-yellow/5 border border-neon-red/30 rounded-xl"
             >
               <div className="flex items-center gap-3 mb-3">
                 <motion.div
                   animate={{ scale: [1, 1.2, 1] }}
                   transition={{ duration: 1.5, repeat: Infinity }}
-className="w-3 h-3 bg-pink-500 rounded-full"
+                  className="w-3 h-3 bg-neon-red rounded-full"
                 />
-                <span className="text-pink-600 font-semibold">Only 3 slots remaining this quarter</span>
+                <span className="text-neon-red font-semibold">Only 3 slots remaining this quarter</span>
               </div>
-<p className="text-gray-700 text-sm">
+              <p className="text-gray-300 text-sm">
                 Due to the intensive nature of our strategic partnerships, we limit 
                 engagements to ensure exceptional results for every client.
               </p>
@@ -125,10 +125,10 @@ className="w-3 h-3 bg-pink-500 rounded-full"
                   transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
                   className="flex items-center gap-3"
                 >
-<div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center">
-                    <ApperIcon name="Check" size={14} className="text-neutral-black" />
+                  <div className="w-6 h-6 bg-neon-green rounded-full flex items-center justify-center">
+                    <ApperIcon name="Check" size={14} className="text-dark-bg" />
                   </div>
-<span className="text-gray-700">{benefit}</span>
+                  <span className="text-gray-300">{benefit}</span>
                 </motion.div>
               ))}
             </div>
@@ -136,7 +136,7 @@ className="w-3 h-3 bg-pink-500 rounded-full"
             {/* Guarantee badge */}
             <motion.div
               whileHover={{ scale: 1.05 }}
-className="inline-flex items-center gap-2 px-4 py-2 bg-pastel-green/20 border border-pastel-green/40 rounded-full text-green-600 text-sm"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-neon-green/10 border border-neon-green/30 rounded-full text-neon-green text-sm"
             >
               <ApperIcon name="Shield" size={16} />
               <span>30-day strategic clarity guarantee or full refund</span>
@@ -151,13 +151,13 @@ className="inline-flex items-center gap-2 px-4 py-2 bg-pastel-green/20 border bo
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative"
           >
-<div className="bg-neutral-card border-2 border-pastel-green/40 rounded-2xl p-8 shadow-lg">
+            <div className="bg-dark-card border-2 border-neon-green/30 rounded-2xl p-8 shadow-neon">
               <div className="space-y-6">
                 <div className="text-center space-y-3">
-<h3 className="text-2xl font-display text-neutral-black">
+                  <h3 className="text-2xl font-display text-white">
                     Book Your Free Strategy Call
                   </h3>
-<p className="text-gray-600">
+                  <p className="text-gray-400">
                     Get a custom growth assessment and roadmap for your business
                   </p>
                 </div>
@@ -193,13 +193,13 @@ className="inline-flex items-center gap-2 px-4 py-2 bg-pastel-green/20 border bo
                   />
 
                   <div>
-<label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium text-gray-300 mb-2">
                       Current Monthly Revenue Range
                     </label>
                     <select
                       value={formData.revenue}
                       onChange={(e) => handleInputChange('revenue', e.target.value)}
-className="w-full px-4 py-3 bg-neutral-card border-2 border-neutral-border rounded-lg text-neutral-black focus:border-primary focus:outline-none transition-all duration-300"
+                      className="w-full px-4 py-3 bg-dark-card border-2 border-dark-border rounded-lg text-white focus:border-neon-green focus:outline-none transition-all duration-300"
                       required
                     >
                       <option value="">Select revenue range</option>
@@ -211,7 +211,7 @@ className="w-full px-4 py-3 bg-neutral-card border-2 border-neutral-border round
                   </div>
 
                   <div>
-<label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium text-gray-300 mb-2">
                       Biggest Growth Challenge
                     </label>
                     <textarea
@@ -219,7 +219,7 @@ className="w-full px-4 py-3 bg-neutral-card border-2 border-neutral-border round
                       value={formData.challenge}
                       onChange={(e) => handleInputChange('challenge', e.target.value)}
                       rows={4}
-className="w-full px-4 py-3 bg-neutral-card border-2 border-neutral-border rounded-lg text-neutral-black placeholder-gray-500 focus:border-primary focus:outline-none transition-all duration-300 resize-none"
+                      className="w-full px-4 py-3 bg-dark-card border-2 border-dark-border rounded-lg text-white placeholder-gray-500 focus:border-neon-green focus:outline-none transition-all duration-300 resize-none"
                       required
                     />
                   </div>
@@ -247,7 +247,7 @@ className="w-full px-4 py-3 bg-neutral-card border-2 border-neutral-border round
                   </div>
                 </form>
 
-<div className="text-center pt-4 border-t border-neutral-border">
+                <div className="text-center pt-4 border-t border-dark-border">
                   <p className="text-xs text-gray-500">
                     By submitting this form, you agree to receive strategic insights and updates. 
                     No spam, only valuable content.
