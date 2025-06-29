@@ -13,9 +13,9 @@ const ResultsSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-dark-bg relative overflow-hidden">
+<section className="py-20 bg-dark-bg relative overflow-hidden">
       {/* Background effects */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 z-0">
         <motion.div
           animate={{
             scale: [1, 1.1, 1],
@@ -32,9 +32,9 @@ const ResultsSection = () => {
           transition={{ duration: 10, repeat: Infinity }}
           className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-l from-neon-lime/20 to-neon-green/10 rounded-full blur-3xl"
         />
-      </div>
+</div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <motion.div
@@ -75,7 +75,7 @@ const ResultsSection = () => {
               viewport={{ once: true }}
 transition={{ duration: 0.6, delay: index * 0.1 }}
               whileHover={{ y: -8, scale: 1.05 }}
-              className="bg-dark-card border border-neon-green/20 rounded-xl p-6 hover:border-neon-green/50 hover:shadow-card-hover transition-all duration-300 group glow-on-hover relative z-10"
+              className="bg-dark-card border border-neon-green/20 rounded-xl p-6 hover:border-neon-green/50 hover:shadow-card-hover transition-all duration-300 group glow-on-hover relative z-30"
             >
               <MetricCard {...result} delay={index * 0.1} />
             </motion.div>
@@ -147,7 +147,7 @@ transition={{ duration: 0.6, delay: index * 0.1 }}
 <Button 
             variant="primary" 
             size="lg"
-            icon="ExternalLink"
+            icon="TrendingUp"
           >
             View Case Study
           </Button>
