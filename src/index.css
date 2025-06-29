@@ -60,19 +60,21 @@ body {
     @apply bg-glass-white backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-glass;
   }
 
-  .glass-effect {
+.glass-effect {
     @apply bg-glass-white backdrop-blur-lg border border-white/20 shadow-glass;
   }
 
 .text-neon-green {
-    @apply text-neon-green;
+    color: #00ff88;
   }
 
   .text-neon-blue {
-    @apply text-neon-blue;
+    color: #00ccff;
   }
 
   .text-neon-warm {
+    color: #ff8800;
+  }
     @apply text-neon-orange;
   }
 
