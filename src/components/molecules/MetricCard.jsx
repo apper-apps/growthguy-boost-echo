@@ -48,7 +48,7 @@ return (
       className={`text-center space-y-2 ${className}`}
     >
 <motion.div
-        className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gradient"
+        className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-neon-green"
         animate={isVisible ? { scale: [1, 1.1, 1] } : {}}
         transition={{ duration: 0.5, delay: 0.5 }}
       >

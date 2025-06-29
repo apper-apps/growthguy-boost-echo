@@ -9,16 +9,15 @@ const ServiceCard = ({ service, index }) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: index * 0.2 }}
 whileHover={{ y: -8 }}
-      className="card-neon group relative overflow-hidden glow-on-hover"
+      className="card-neon group relative overflow-hidden hover-border-glow"
     >
       {/* Slanted corner decoration */}
-      <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-neon-green to-neon-lime transform rotate-45 translate-x-8 -translate-y-8 group-hover:scale-110 transition-transform duration-300" />
-      
+      <div className="absolute top-0 right-0 w-16 h-16 bg-neon-green transform rotate-45 translate-x-8 -translate-y-8 group-hover:scale-110 transition-transform duration-300" />
       {/* Icon */}
       <motion.div
         whileHover={{ rotate: 360 }}
-        transition={{ duration: 0.6 }}
-        className="w-16 h-16 bg-gradient-to-br from-neon-green/20 to-neon-lime/10 rounded-lg flex items-center justify-center mb-6"
+transition={{ duration: 0.6 }}
+        className="w-16 h-16 bg-neon-green/20 rounded-lg flex items-center justify-center mb-6"
       >
         <ApperIcon name={service.icon} size={32} className="text-neon-green" />
       </motion.div>
@@ -46,8 +45,8 @@ whileHover={{ y: -8 }}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.5 + index * 0.2 }}
-          className="bg-gradient-to-r from-neon-green/20 to-neon-lime/10 border border-neon-green/30 rounded-lg p-3"
+transition={{ delay: 0.5 + index * 0.2 }}
+          className="bg-neon-green/20 border border-neon-green/30 rounded-lg p-3"
         >
           <div className="flex items-center gap-2 text-sm">
             <ApperIcon name="Trophy" size={16} className="text-neon-green" />

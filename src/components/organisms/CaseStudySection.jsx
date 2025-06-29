@@ -11,8 +11,8 @@ const CaseStudySection = () => {
     { value: 15, suffix: 'X', label: 'Customer LTV' }
   ];
 
-  return (
-    <section className="py-20 bg-gradient-to-br from-dark-card to-dark-bg">
+return (
+    <section className="py-20 bg-dark-bg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
@@ -28,10 +28,10 @@ const CaseStudySection = () => {
             <span>Featured Case Study</span>
           </div>
           
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-white leading-tight">
+<h2 className="text-4xl md:text-5xl font-display font-bold text-white leading-tight">
             How We Scaled Wall Art E-commerce from{' '}
             <span className="text-neon-red">2L</span> to{' '}
-            <span className="text-gradient">45L Monthly Revenue</span>
+            <span className="text-neon-green">45L Monthly Revenue</span>
           </h2>
         </motion.div>
 
@@ -108,28 +108,51 @@ const CaseStudySection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="space-y-8"
           >
-            <div className="grid gap-6">
+<div className="grid gap-6">
               {caseStudyMetrics.map((metric, index) => (
                 <motion.div
                   key={metric.label}
                   initial={{ opacity: 0, scale: 0.8 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
-transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
-                  className="p-6 bg-dark-card border border-neon-green/20 rounded-xl hover:border-neon-green/50 hover:shadow-card-hover transition-all duration-300 glow-on-hover"
+                  transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
+                  className="relative p-6 bg-dark-card border border-neon-green/20 rounded-xl hover:border-neon-green/50 transition-all duration-300 overflow-hidden"
+                  style={{
+                    backgroundImage: 'url("data:image/svg+xml,%3Csvg width="100" height="100" xmlns="http://www.w3.org/2000/svg"%3E%3Cdefs%3E%3Cpattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"%3E%3Cpath d="M 20 0 L 0 0 0 20" fill="none" stroke="%23333333" stroke-width="0.5" opacity="0.3"/%3E%3C/pattern%3E%3C/defs%3E%3Crect width="100" height="100" fill="url(%23grid)"/%3E%3C/svg%3E")',
+                    backgroundSize: '40px 40px'
+                  }}
                 >
                   <MetricCard {...metric} delay={index * 0.1} />
                 </motion.div>
               ))}
             </div>
 
+            {/* View Case Study CTA */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              className="mt-8"
+            >
+              <Button 
+                variant="primary" 
+                size="lg"
+                icon="FileText"
+                iconPosition="right"
+                className="w-full"
+              >
+                View Case Study
+              </Button>
+            </motion.div>
+
             {/* Results timeline */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.5 }}
-              className="p-6 bg-gradient-to-r from-neon-green/10 to-neon-lime/5 border border-neon-green/20 rounded-xl"
+transition={{ duration: 0.8, delay: 0.5 }}
+              className="p-6 bg-neon-green/10 border border-neon-green/20 rounded-xl"
             >
               <h4 className="text-lg font-display text-neon-green mb-4">Growth Timeline</h4>
               <div className="space-y-3 text-sm">
