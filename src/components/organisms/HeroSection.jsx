@@ -75,13 +75,13 @@ className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight
               transition={{ duration: 0.8, delay: 0.6 }}
               className="flex"
             >
-              <Button 
+<Button 
                 variant="primary" 
                 size="lg"
                 icon="Calendar"
                 className="w-full sm:w-auto"
               >
-                Book Your Growth Strategy Call
+                View Case Study
               </Button>
             </motion.div>
 
@@ -120,11 +120,39 @@ className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight
                 whileHover={{ scale: 1.02 }}
                 className="aspect-square bg-gradient-to-br from-dark-card to-dark-bg rounded-2xl border-2 border-neon-green/30 p-8 shadow-neon"
               >
-                {/* Placeholder for professional photo */}
-                <div className="w-full h-2/3 bg-gradient-to-br from-neon-green/10 to-neon-lime/5 rounded-xl flex items-center justify-center mb-6">
-                  <ApperIcon name="User" size={120} className="text-neon-green/50" />
+{/* Postcard Design */}
+                <div className="w-full h-2/3 bg-gradient-to-br from-neon-green/20 to-neon-lime/10 rounded-xl border border-neon-green/30 p-6 mb-6 relative overflow-hidden">
+                  {/* Postcard Background Pattern */}
+                  <div className="absolute inset-0 opacity-10">
+                    <div className="grid grid-cols-8 grid-rows-6 h-full gap-1">
+                      {Array.from({ length: 48 }).map((_, i) => (
+                        <div key={i} className="bg-neon-green/20 rounded-sm"></div>
+                      ))}
+                    </div>
+                  </div>
+                  
+                  {/* Postcard Content */}
+                  <div className="relative z-10 h-full flex flex-col justify-between">
+                    {/* Header */}
+                    <div className="flex items-center justify-between">
+                      <div className="text-neon-green text-sm font-bold">GROWTH RESULTS</div>
+                      <ApperIcon name="Mail" size={20} className="text-neon-green/70" />
+                    </div>
+                    
+                    {/* Center Content */}
+                    <div className="text-center space-y-2">
+                      <div className="text-2xl font-bold text-white">25X</div>
+                      <div className="text-sm text-gray-300">Revenue Growth</div>
+                      <div className="w-16 h-1 bg-gradient-to-r from-neon-green to-neon-lime rounded-full mx-auto"></div>
+                    </div>
+                    
+                    {/* Footer */}
+                    <div className="flex items-center justify-between text-xs text-gray-400">
+                      <span>Case Study</span>
+                      <span>2024</span>
+                    </div>
+                  </div>
                 </div>
-                
                 {/* Growth chart overlay */}
                 <div className="absolute inset-0 flex items-end justify-center p-8 pointer-events-none">
                   <motion.div

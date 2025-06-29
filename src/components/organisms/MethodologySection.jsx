@@ -12,10 +12,10 @@ const MethodologySection = () => {
       icon: 'Search',
       title: 'AUDIT',
       description: 'Deep-dive analysis of current state',
-      points: [
+points: [
         'Growth barriers identification',
         'Competitive positioning analysis',
-        'Revenue optimization opportunities'
+        'Revenue optimization'
       ]
     },
     {

@@ -16,10 +16,10 @@ const ServicesSection = () => {
       result: 'Helped Ripple.io achieve product-market fit',
       link: '#'
     },
-    {
+{
       icon: 'ShoppingCart',
       title: 'E-Commerce Scaling',
-      subtitle: 'Performance marketing & conversion optimization',
+      subtitle: 'Performance marketing & CRO',
       features: [
         'Cross-channel attribution',
         'Conversion rate optimization',
