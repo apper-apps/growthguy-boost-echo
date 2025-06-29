@@ -17,8 +17,8 @@ const Button = ({
   const variants = {
     primary: "btn-neon",
     outline: "btn-neon-outline",
-    ghost: "text-neon-green hover:bg-neon-green/10 hover:shadow-neon",
-    danger: "bg-neon-red text-white hover:bg-neon-red/80 hover:shadow-[0_0_20px_#FF0040]"
+ghost: "text-neon-green hover:bg-neon-green/10 hover:shadow-neon interactive-scale",
+    danger: "bg-neon-red text-white hover:bg-neon-red/80 hover:shadow-[0_0_20px_#FF0040] interactive-scale"
   };
   
   const sizes = {

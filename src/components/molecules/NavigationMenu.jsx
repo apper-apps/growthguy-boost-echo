@@ -15,9 +15,9 @@ const NavigationMenu = ({ items, activeItem, onItemClick, isMobile = false }) =>
           onMouseLeave={() => setHoveredItem(null)}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className={`relative px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg ${
+className={`relative px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg interactive-scale ${
             activeItem === item.id
-              ? 'text-neon-green bg-neon-green/10'
+              ? 'text-neon-green bg-neon-green/10 shadow-glow'
               : 'text-gray-300 hover:text-neon-green hover:bg-neon-green/5'
           }`}
         >

@@ -37,9 +37,9 @@ const Input = ({
           onChange={onChange}
           disabled={disabled}
           required={required}
-          whileFocus={{ 
-            borderColor: '#00FF41',
-            boxShadow: '0 0 0 1px #00FF41'
+whileFocus={{ 
+            borderColor: '#a9fb50',
+            boxShadow: '0 0 0 1px #a9fb50'
           }}
           className={`
             w-full px-4 py-3 bg-dark-card border-2 border-dark-border rounded-lg

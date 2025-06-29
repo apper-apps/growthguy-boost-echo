@@ -104,8 +104,8 @@ const ProblemSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.1 * index }}
-                whileHover={{ x: 5 }}
-                className="flex items-start gap-4 p-6 bg-dark-card border border-dark-border rounded-xl hover:border-neon-red/30 transition-all duration-300 group"
+whileHover={{ x: 5 }}
+                className="flex items-start gap-4 p-6 bg-dark-card border border-dark-border rounded-xl hover:border-neon-red/30 hover:shadow-glass transition-all duration-300 group glow-on-hover"
               >
                 <div className="flex-shrink-0 w-12 h-12 bg-neon-red/10 rounded-lg flex items-center justify-center group-hover:bg-neon-red/20 transition-colors duration-300">
                   <ApperIcon name="X" size={20} className="text-neon-red" />

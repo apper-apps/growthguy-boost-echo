@@ -15,15 +15,15 @@ const Logo = ({ size = 'md', showText = true, className = '' }) => {
       className={`inline-flex items-center gap-3 ${className}`}
     >
       <motion.div
-        animate={{ 
+animate={{ 
           boxShadow: [
-            '0 0 20px #00FF41',
-            '0 0 30px #00FF41, 0 0 40px #00FF41',
-            '0 0 20px #00FF41'
+            '0 0 20px #a9fb50',
+            '0 0 30px #a9fb50, 0 0 40px #a9fb50',
+            '0 0 20px #a9fb50'
           ]
         }}
         transition={{ duration: 2, repeat: Infinity }}
-        className="bg-gradient-to-br from-neon-green to-neon-lime p-2 rounded-lg"
+        className="bg-gradient-to-br from-neon-green to-neon-lime p-2 rounded-lg shadow-neon"
       >
         <ApperIcon 
           name="TrendingUp" 

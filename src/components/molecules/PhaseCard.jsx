@@ -8,9 +8,9 @@ const PhaseCard = ({ phase, index, isActive = false }) => {
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.6, delay: index * 0.2 }}
       className={`relative p-6 rounded-lg border-2 transition-all duration-500 ${
-        isActive 
-          ? 'border-neon-green bg-neon-green/5 shadow-neon' 
-          : 'border-dark-border bg-dark-card hover:border-neon-green/50'
+isActive 
+          ? 'border-neon-green bg-neon-green/5 shadow-neon glow-on-hover' 
+          : 'border-dark-border bg-dark-card hover:border-neon-green/50 hover:shadow-glass'
       }`}
     >
       {/* Phase number */}

@@ -6,8 +6,8 @@ const TestimonialCard = ({ testimonial, author, company, rating = 5 }) => {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      whileHover={{ y: -5 }}
-      className="card-neon"
+whileHover={{ y: -5 }}
+      className="card-neon glow-on-hover"
     >
       {/* Quote icon */}
       <div className="flex justify-center mb-4">

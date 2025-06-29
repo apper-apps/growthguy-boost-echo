@@ -8,8 +8,8 @@ const ServiceCard = ({ service, index }) => {
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: index * 0.2 }}
-      whileHover={{ y: -8 }}
-      className="card-neon group relative overflow-hidden"
+whileHover={{ y: -8 }}
+      className="card-neon group relative overflow-hidden glow-on-hover"
     >
       {/* Slanted corner decoration */}
       <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-neon-green to-neon-lime transform rotate-45 translate-x-8 -translate-y-8 group-hover:scale-110 transition-transform duration-300" />

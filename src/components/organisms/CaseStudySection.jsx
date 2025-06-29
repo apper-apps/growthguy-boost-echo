@@ -115,8 +115,8 @@ const CaseStudySection = () => {
                   initial={{ opacity: 0, scale: 0.8 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
-                  className="p-6 bg-dark-card border border-neon-green/20 rounded-xl hover:border-neon-green/50 transition-all duration-300"
+transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
+                  className="p-6 bg-dark-card border border-neon-green/20 rounded-xl hover:border-neon-green/50 hover:shadow-card-hover transition-all duration-300 glow-on-hover"
                 >
                   <MetricCard {...metric} delay={index * 0.1} />
                 </motion.div>

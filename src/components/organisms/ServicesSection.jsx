@@ -81,8 +81,8 @@ const ServicesSection = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="text-center space-y-6 p-8 bg-gradient-to-r from-neon-green/5 to-neon-lime/5 border border-neon-green/20 rounded-2xl"
+transition={{ duration: 0.8 }}
+          className="text-center space-y-6 p-8 glass-effect bg-gradient-to-r from-neon-green/5 to-neon-lime/5 border border-neon-green/20 rounded-2xl shadow-neon-lg"
         >
           <h3 className="text-2xl md:text-3xl font-display text-white">
             Ready to discover which sector strategy fits your business?

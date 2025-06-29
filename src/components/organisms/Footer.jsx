@@ -41,9 +41,9 @@ const Footer = () => {
               {quickLinks.map((link) => (
                 <li key={link.label}>
                   <motion.a
-                    href={link.href}
-                    whileHover={{ x: 5, color: '#00FF41' }}
-                    className="text-gray-400 hover:text-neon-green transition-all duration-300 flex items-center gap-2"
+href={link.href}
+                    whileHover={{ x: 5, color: '#a9fb50' }}
+                    className="nav-link flex items-center gap-2 text-gray-400 hover:text-neon-green transition-all duration-300"
                   >
                     <ApperIcon name="ArrowRight" size={14} />
                     {link.label}

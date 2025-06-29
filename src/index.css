@@ -8,36 +8,121 @@
     box-sizing: border-box;
   }
   
-body {
+  body {
     font-family: 'SF Pro Display', 'SF Pro Text', 'system-ui', sans-serif;
     background-color: #0A0A0A;
     color: #ffffff;
     line-height: 1.6;
     overflow-x: hidden;
+    font-feature-settings: 'kern' 1, 'liga' 1, 'calt' 1;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Bebas Neue', cursive;
     font-weight: 400;
     letter-spacing: 0.02em;
+    line-height: 1.2;
+  }
+
+  h1 { @apply text-6xl md:text-7xl lg:text-8xl; }
+  h2 { @apply text-4xl md:text-5xl lg:text-6xl; }
+  h3 { @apply text-3xl md:text-4xl lg:text-5xl; }
+  h4 { @apply text-2xl md:text-3xl; }
+  h5 { @apply text-xl md:text-2xl; }
+  h6 { @apply text-lg md:text-xl; }
+
+  p {
+    @apply text-base leading-relaxed;
+  }
+
+  a {
+    @apply transition-colors duration-200;
   }
 }
 
 @layer components {
-.btn-neon {
-    @apply relative overflow-hidden bg-gradient-to-r from-neon-green to-neon-green2 text-dark-bg font-bold py-4 px-8 rounded-xl transition-all duration-300 hover:scale-105;
+  .btn-neon {
+    @apply relative overflow-hidden bg-gradient-to-r from-neon-green to-neon-green2 text-dark-bg font-bold py-4 px-8 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-neon;
   }
   
   .btn-neon-outline {
-    @apply relative border-2 border-neon-green text-neon-green font-bold py-4 px-8 rounded-xl transition-all duration-300 hover:bg-neon-green hover:text-dark-bg;
+    @apply relative border-2 border-neon-green text-neon-green font-bold py-4 px-8 rounded-xl transition-all duration-300 hover:bg-neon-green hover:text-dark-bg hover:shadow-neon;
   }
   
-.card-neon {
-    @apply bg-dark-card border-2 border-neon-green/20 rounded-xl p-6 transition-all duration-300 hover:border-neon-green/50 hover:-translate-y-2 flex flex-col min-h-full;
+  .card-neon {
+    @apply bg-dark-card border-2 border-neon-green/20 rounded-xl p-6 transition-all duration-300 hover:border-neon-green/50 hover:-translate-y-2 hover:shadow-card-hover flex flex-col min-h-full;
   }
   
+  .card-glass {
+    @apply bg-glass-white backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-glass;
+  }
+
+  .glass-effect {
+    @apply bg-glass-white backdrop-blur-lg border border-white/20 shadow-glass;
+  }
+
   .text-gradient {
     @apply bg-gradient-to-r from-neon-green to-neon-lime bg-clip-text text-transparent;
+  }
+
+  .text-gradient-blue {
+    @apply bg-gradient-to-r from-neon-blue to-neon-purple bg-clip-text text-transparent;
+  }
+
+  .text-gradient-warm {
+    @apply bg-gradient-to-r from-neon-orange to-neon-yellow bg-clip-text text-transparent;
+  }
+
+  .surface-elevated {
+    @apply bg-dark-lighter border border-dark-border rounded-lg shadow-glass;
+  }
+
+  .interactive-scale {
+    @apply transition-transform duration-200 hover:scale-105 active:scale-95;
+  }
+
+  .glow-on-hover {
+    @apply transition-all duration-300 hover:shadow-neon hover:border-neon-green/50;
+  }
+
+  .fade-in-up {
+    @apply animate-slide-up;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-20 lg:py-24;
+  }
+
+  .container-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+
+  .prose-custom {
+    @apply text-gray-300 leading-relaxed;
+  }
+
+  .prose-custom h1, .prose-custom h2, .prose-custom h3, .prose-custom h4, .prose-custom h5, .prose-custom h6 {
+    @apply text-white font-display;
+  }
+
+  .input-glass {
+    @apply bg-glass-dark backdrop-blur-md border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-neon-green focus:shadow-glow transition-all duration-300;
+  }
+
+  .nav-link {
+    @apply text-gray-300 hover:text-neon-green transition-colors duration-200 relative;
+  }
+
+  .nav-link::after {
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-neon-green transition-all duration-300;
+    content: '';
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
   }
 }
 

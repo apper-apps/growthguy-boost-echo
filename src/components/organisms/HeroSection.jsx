@@ -20,9 +20,9 @@ const HeroSection = () => {
             scale: [1, 1.2, 1],
             rotate: [0, 180, 360],
             opacity: [0.1, 0.3, 0.1]
-          }}
+}}
           transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-          className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-neon-green/20 to-neon-lime/10 rounded-full blur-3xl"
+          className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-neon-green/30 to-neon-lime/15 rounded-full blur-3xl"
         />
         <motion.div
           animate={{

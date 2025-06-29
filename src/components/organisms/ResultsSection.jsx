@@ -73,9 +73,9 @@ const ResultsSection = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
+transition={{ duration: 0.6, delay: index * 0.1 }}
               whileHover={{ y: -8, scale: 1.05 }}
-              className="bg-dark-card border border-neon-green/20 rounded-xl p-6 hover:border-neon-green/50 hover:shadow-card-hover transition-all duration-300 group"
+              className="bg-dark-card border border-neon-green/20 rounded-xl p-6 hover:border-neon-green/50 hover:shadow-card-hover transition-all duration-300 group glow-on-hover"
             >
               <div className="relative">
                 <MetricCard {...result} delay={index * 0.1} />
