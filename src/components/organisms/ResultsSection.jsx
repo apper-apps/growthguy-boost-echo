@@ -75,18 +75,9 @@ const ResultsSection = () => {
               viewport={{ once: true }}
 transition={{ duration: 0.6, delay: index * 0.1 }}
               whileHover={{ y: -8, scale: 1.05 }}
-              className="bg-dark-card border border-neon-green/20 rounded-xl p-6 hover:border-neon-green/50 hover:shadow-card-hover transition-all duration-300 group glow-on-hover"
+              className="bg-dark-card border border-neon-green/20 rounded-xl p-6 hover:border-neon-green/50 hover:shadow-card-hover transition-all duration-300 group glow-on-hover relative z-10"
             >
-              <div className="relative">
-                <MetricCard {...result} delay={index * 0.1} />
-                
-                {/* Hover glow effect */}
-                <motion.div
-                  initial={{ scale: 0, opacity: 0 }}
-                  whileHover={{ scale: 1, opacity: 0.1 }}
-                  className="absolute inset-0 bg-neon-green rounded-lg"
-                />
-              </div>
+              <MetricCard {...result} delay={index * 0.1} />
             </motion.div>
           ))}
         </motion.div>
@@ -153,12 +144,12 @@ transition={{ duration: 0.6, delay: index * 0.1 }}
             that their competitors still can't explain.
           </p>
           
-          <Button 
+<Button 
             variant="primary" 
             size="lg"
-            icon="Rocket"
+            icon="ExternalLink"
           >
-            Become Our Next Success Story
+            View Case Study
           </Button>
         </motion.div>
       </div>

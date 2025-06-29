@@ -46,15 +46,15 @@ return (
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay }}
       className={`text-center space-y-2 ${className}`}
-    >
-<motion.div
-        className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-neon-green"
+>
+      <motion.div
+        className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-neon-green relative z-20"
         animate={isVisible ? { scale: [1, 1.1, 1] } : {}}
         transition={{ duration: 0.5, delay: 0.5 }}
       >
         {displayValue}{suffix}
       </motion.div>
-      <div className="text-sm md:text-base text-gray-400 uppercase tracking-wider">
+      <div className="text-sm md:text-base text-gray-400 uppercase tracking-wider relative z-20">
         {label}
       </div>
     </motion.div>
