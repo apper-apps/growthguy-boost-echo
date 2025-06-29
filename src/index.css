@@ -72,10 +72,8 @@ body {
     color: #00ccff;
   }
 
-  .text-neon-warm {
+.text-neon-warm {
     color: #ff8800;
-  }
-    @apply text-neon-orange;
   }
 
   .surface-elevated {
