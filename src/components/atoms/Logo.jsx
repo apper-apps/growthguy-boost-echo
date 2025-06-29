@@ -15,29 +15,29 @@ const Logo = ({ size = 'md', showText = true, className = '' }) => {
       className={`inline-flex items-center gap-3 ${className}`}
     >
       <motion.div
-        animate={{ 
+animate={{ 
           boxShadow: [
-            '0 0 20px #00FF41',
-            '0 0 30px #00FF41, 0 0 40px #00FF41',
-            '0 0 20px #00FF41'
+            '0 0 10px #E2FF65',
+            '0 0 20px #E2FF65',
+            '0 0 10px #E2FF65'
           ]
         }}
         transition={{ duration: 2, repeat: Infinity }}
-        className="bg-gradient-to-br from-neon-green to-neon-lime p-2 rounded-lg"
+        className="bg-primary p-2 rounded-lg"
       >
         <ApperIcon 
           name="TrendingUp" 
           size={sizes[size].icon} 
-          className="text-dark-bg" 
+className="text-neutral-black"
         />
       </motion.div>
       
       {showText && (
         <div className="flex flex-col">
-          <span className={`font-display font-bold text-white ${sizes[size].text}`}>
-            Growth<span className="text-gradient">Guy</span>
+<span className={`font-display font-bold text-neutral-black ${sizes[size].text}`}>
+            Growth<span className="text-primary">Guy</span>
           </span>
-          <span className="text-xs text-gray-400 -mt-1">
+<span className="text-xs text-gray-600 -mt-1">
             Fractional CMO
           </span>
         </div>

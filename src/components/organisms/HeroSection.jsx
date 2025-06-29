@@ -12,7 +12,7 @@ const HeroSection = () => {
   ];
 
   return (
-<section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-light-bg via-pastel-blue/10 to-pastel-sage/10">
+<section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-neutral-light">
       {/* Animated background elements */}
       <div className="absolute inset-0">
         <motion.div
@@ -22,7 +22,7 @@ const HeroSection = () => {
             opacity: [0.1, 0.3, 0.1]
           }}
           transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-pastel-sage/20 to-pastel-peach/10 rounded-full blur-3xl"
+className="absolute top-1/4 left-1/4 w-96 h-96 bg-pastel-green/20 rounded-full blur-3xl"
         />
         <motion.div
           animate={{
@@ -31,7 +31,7 @@ className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-pastel-sage
             opacity: [0.1, 0.2, 0.1]
           }}
           transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-l from-pastel-peach/20 to-pastel-sage/10 rounded-full blur-3xl"
+className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-pastel-blue/20 rounded-full blur-3xl"
         />
       </div>
 
@@ -53,8 +53,8 @@ className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-l from-pastel-
                 transition={{ duration: 0.8, delay: 0.2 }}
 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight"
               >
-<span className="text-gray-800">Fractional CMO Who Delivered</span>{' '}
-                <span className="text-gradient">25X Revenue Growth</span>
+<span className="text-neutral-black">Fractional CMO Who Delivered</span>{' '}
+                <span className="text-primary">25X Revenue Growth</span>
               </motion.h1>
               
               <motion.p
@@ -64,7 +64,7 @@ className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight
 className="text-xl md:text-2xl text-gray-600 max-w-2xl"
               >
                 Strategic excellence for SaaS, E-commerce & Real Estate companies 
-                ready to scale from <span className="text-green-700 font-semibold">10L to 50Cr+ revenue</span>
+                ready to scale from <span className="text-primary font-semibold">10L to 50Cr+ revenue</span>
               </motion.p>
             </div>
 
@@ -98,18 +98,18 @@ className="text-xl md:text-2xl text-gray-600 max-w-2xl"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.8 }}
-className="flex flex-wrap items-center gap-6 pt-6 border-t border-light-border"
+className="flex flex-wrap items-center gap-6 pt-6 border-t border-neutral-border"
             >
               <div className="flex items-center gap-2 text-sm text-gray-600">
-                <ApperIcon name="Shield" size={16} className="text-green-700" />
+<ApperIcon name="Shield" size={16} className="text-primary" />
                 <span>30-day guarantee</span>
               </div>
               <div className="flex items-center gap-2 text-sm text-gray-600">
-                <ApperIcon name="Users" size={16} className="text-green-700" />
+<ApperIcon name="Users" size={16} className="text-primary" />
                 <span>50+ companies helped</span>
               </div>
               <div className="flex items-center gap-2 text-sm text-gray-600">
-                <ApperIcon name="Award" size={16} className="text-green-700" />
+<ApperIcon name="Award" size={16} className="text-primary" />
                 <span>9+ years experience</span>
               </div>
             </motion.div>
@@ -126,11 +126,11 @@ className="flex flex-wrap items-center gap-6 pt-6 border-t border-light-border"
             <div className="relative">
               <motion.div
                 whileHover={{ scale: 1.02 }}
-className="aspect-square bg-gradient-to-br from-light-card to-pastel-blue/20 rounded-2xl border-2 border-pastel-sage/40 p-8 shadow-lg"
+className="aspect-square bg-neutral-card rounded-2xl border-2 border-pastel-green/40 p-8 shadow-lg"
               >
                 {/* Placeholder for professional photo */}
-<div className="w-full h-2/3 bg-gradient-to-br from-pastel-sage/20 to-pastel-peach/10 rounded-xl flex items-center justify-center mb-6">
-                  <ApperIcon name="User" size={120} className="text-green-600/60" />
+<div className="w-full h-2/3 bg-pastel-green/20 rounded-xl flex items-center justify-center mb-6">
+                  <ApperIcon name="User" size={120} className="text-primary/60" />
                 </div>
                 
                 {/* Growth chart overlay */}
@@ -139,9 +139,9 @@ className="aspect-square bg-gradient-to-br from-light-card to-pastel-blue/20 rou
                     initial={{ width: 0 }}
                     animate={{ width: '100%' }}
                     transition={{ duration: 2, delay: 1 }}
-className="h-16 bg-gradient-to-r from-pastel-sage to-pastel-peach rounded-lg opacity-80 flex items-center justify-center"
+className="h-16 bg-primary rounded-lg opacity-80 flex items-center justify-center"
                   >
-                    <ApperIcon name="TrendingUp" size={32} className="text-gray-800" />
+                    <ApperIcon name="TrendingUp" size={32} className="text-neutral-black" />
                   </motion.div>
                 </div>
               </motion.div>
@@ -154,7 +154,7 @@ className="h-16 bg-gradient-to-r from-pastel-sage to-pastel-peach rounded-lg opa
                     initial={{ opacity: 0, scale: 0 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: 1 + index * 0.2 }}
-className="bg-light-card border border-pastel-sage/40 rounded-lg p-4 shadow-md backdrop-blur-sm"
+className="bg-neutral-card border border-pastel-green/40 rounded-lg p-4 shadow-md backdrop-blur-sm"
                   >
                     <MetricCard {...result} delay={index * 0.1} />
                   </motion.div>

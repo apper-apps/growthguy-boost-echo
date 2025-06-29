@@ -1,14 +1,14 @@
 export const COLORS = {
+  primary: '#E2FF65',
   pastel: {
-    sage: '#B8E6B8',
-    sage2: '#A0D4A0',
-    peach: '#FFE5CC',
-    peach2: '#FFD4B3',
-    blue: '#E6F3FF',
-    blue2: '#CCE7FF',
+    blue: '#D2E0FB',
+    green: '#D8EFD3',
+    pink: '#F8E8EE',
+    yellow: '#FFF2CC',
   },
-  light: {
-    bg: '#FAFAFA',
+  neutral: {
+    black: '#24272F',
+    light: '#FAFAFA',
     card: '#FFFFFF',
     border: '#E5E5E5',
   }

@@ -11,7 +11,7 @@
 body {
     font-family: 'SF Pro Display', 'SF Pro Text', 'system-ui', sans-serif;
     background-color: #FAFAFA;
-    color: #2D3748;
+    color: #24272F;
     line-height: 1.6;
     overflow-x: hidden;
   }
@@ -24,20 +24,20 @@ body {
 }
 
 @layer components {
-.btn-pastel {
-    @apply relative overflow-hidden bg-gradient-to-r from-pastel-sage to-pastel-sage2 text-gray-800 font-bold py-4 px-8 rounded-xl transition-all duration-300 hover:scale-105 shadow-sm;
+.btn-primary {
+    @apply relative overflow-hidden bg-neutral-black text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 hover:scale-105 shadow-sm;
   }
   
-  .btn-pastel-outline {
-    @apply relative border-2 border-pastel-sage text-pastel-sage font-bold py-4 px-8 rounded-xl transition-all duration-300 hover:bg-pastel-sage hover:text-gray-800;
+  .btn-primary-outline {
+    @apply relative border-2 border-neutral-black text-neutral-black font-bold py-4 px-8 rounded-xl transition-all duration-300 hover:bg-neutral-black hover:text-white;
   }
   
 .card-pastel {
-    @apply bg-light-card border-2 border-pastel-sage/30 rounded-xl p-6 transition-all duration-300 hover:border-pastel-sage/60 hover:-translate-y-1 flex flex-col min-h-full shadow-sm;
+    @apply bg-neutral-card border-2 border-pastel-green/40 rounded-xl p-6 transition-all duration-300 hover:border-pastel-green/70 hover:-translate-y-1 flex flex-col min-h-full shadow-sm;
   }
   
-  .text-gradient {
-    @apply bg-gradient-to-r from-pastel-sage to-pastel-peach bg-clip-text text-transparent;
+.text-primary {
+    @apply text-primary;
   }
 }
 
@@ -48,22 +48,22 @@ body {
 }
 
 .Toastify__toast {
-  @apply bg-light-card border border-pastel-sage/40 text-gray-800 rounded-lg shadow-md;
+  @apply bg-neutral-card border border-pastel-green/40 text-neutral-black rounded-lg shadow-md;
   min-height: 48px;
   padding: 12px 16px;
   margin-bottom: 8px;
 }
 
 .Toastify__toast--success {
-  @apply border-pastel-sage/60;
+  @apply border-pastel-green/60;
 }
 
 .Toastify__toast--error {
-  @apply border-pastel-peach/60;
+  @apply border-pastel-pink/60;
 }
 
 .Toastify__progress-bar {
-  @apply bg-pastel-sage;
+  @apply bg-pastel-green;
 }
 
 /* Smooth scrolling */
@@ -81,10 +81,11 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #B8E6B8;
+  background: #D8EFD3;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #A0D4A0;
+  background: #primary;
+}
 }

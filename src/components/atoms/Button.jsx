@@ -12,13 +12,13 @@ const Button = ({
   className = '',
   ...props 
 }) => {
-  const baseClasses = "inline-flex items-center justify-center font-bold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-neon-green/50 disabled:opacity-50 disabled:cursor-not-allowed";
+const baseClasses = "inline-flex items-center justify-center font-bold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary/50 disabled:opacity-50 disabled:cursor-not-allowed";
   
-  const variants = {
-    primary: "btn-neon",
-    outline: "btn-neon-outline",
-    ghost: "text-neon-green hover:bg-neon-green/10 hover:shadow-neon",
-    danger: "bg-neon-red text-white hover:bg-neon-red/80 hover:shadow-[0_0_20px_#FF0040]"
+const variants = {
+    primary: "bg-neutral-black text-white hover:bg-neutral-black/90 hover:scale-105 shadow-sm",
+    outline: "border-2 border-neutral-black text-neutral-black hover:bg-neutral-black hover:text-white",
+    ghost: "text-primary hover:bg-primary/10",
+    danger: "bg-red-500 text-white hover:bg-red-600"
   };
   
   const sizes = {

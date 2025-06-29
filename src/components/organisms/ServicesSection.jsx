@@ -43,7 +43,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-dark-bg">
+<section className="py-20 bg-neutral-light">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
@@ -54,16 +54,16 @@ const ServicesSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center space-y-6 mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-neon-green/10 border border-neon-green/30 rounded-full text-neon-green text-sm">
+<div className="inline-flex items-center gap-2 px-4 py-2 bg-pastel-blue/20 border border-pastel-blue/50 rounded-full text-blue-600 text-sm">
             <span>Strategic Services</span>
           </div>
           
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white leading-tight">
-            <span className="text-neon-green">3 High-ROI Sectors.</span><br />
-            <span className="text-gradient">1 Strategic Approach.</span>
+<h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-neutral-black leading-tight">
+            <span className="text-primary">3 High-ROI Sectors.</span><br />
+            <span className="text-primary">1 Strategic Approach.</span>
           </h2>
           
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+<p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Specialized expertise in the sectors that demand the highest growth standards 
             and deliver the most predictable results.
           </p>
@@ -82,13 +82,13 @@ const ServicesSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center space-y-6 p-8 bg-gradient-to-r from-neon-green/5 to-neon-lime/5 border border-neon-green/20 rounded-2xl"
+className="text-center space-y-6 p-8 bg-pastel-green/20 border border-pastel-green/40 rounded-2xl"
         >
-          <h3 className="text-2xl md:text-3xl font-display text-white">
+<h3 className="text-2xl md:text-3xl font-display text-neutral-black">
             Ready to discover which sector strategy fits your business?
           </h3>
           
-          <p className="text-gray-400 max-w-2xl mx-auto">
+<p className="text-gray-600 max-w-2xl mx-auto">
             Book a strategic assessment call to identify your highest-impact growth opportunities 
             and the exact approach that will deliver 10X+ results.
           </p>

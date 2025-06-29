@@ -12,7 +12,7 @@ const CaseStudySection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-dark-card to-dark-bg">
+<section className="py-20 bg-pastel-blue/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
@@ -23,15 +23,15 @@ const CaseStudySection = () => {
           transition={{ duration: 0.8 }}
           className="text-center space-y-6 mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-neon-green/10 border border-neon-green/30 rounded-full text-neon-green text-sm">
+<div className="inline-flex items-center gap-2 px-4 py-2 bg-pastel-yellow/30 border border-pastel-yellow/50 rounded-full text-yellow-600 text-sm">
             <ApperIcon name="FileText" size={16} />
             <span>Featured Case Study</span>
           </div>
           
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-white leading-tight">
+<h2 className="text-4xl md:text-5xl font-display font-bold text-neutral-black leading-tight">
             How We Scaled Wall Art E-commerce from{' '}
-            <span className="text-neon-red">2L</span> to{' '}
-            <span className="text-gradient">45L Monthly Revenue</span>
+            <span className="text-red-600">2L</span> to{' '}
+            <span className="text-primary">45L Monthly Revenue</span>
           </h2>
         </motion.div>
 
@@ -48,12 +48,12 @@ const CaseStudySection = () => {
             {/* Challenge */}
             <div className="space-y-4">
               <div className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-neon-red/20 rounded-lg flex items-center justify-center">
-                  <ApperIcon name="AlertTriangle" size={16} className="text-neon-red" />
+<div className="w-8 h-8 bg-pastel-pink/40 rounded-lg flex items-center justify-center">
+                  <ApperIcon name="AlertTriangle" size={16} className="text-red-600" />
                 </div>
-                <h3 className="text-xl font-display text-neon-red">Challenge</h3>
+<h3 className="text-xl font-display text-red-600">Challenge</h3>
               </div>
-              <p className="text-gray-300 pl-10">
+<p className="text-gray-700 pl-10">
                 Traditional artisan business struggling with online presence. 
                 Limited to local sales with no digital marketing expertise or 
                 scalable customer acquisition systems.
@@ -63,12 +63,12 @@ const CaseStudySection = () => {
             {/* Strategy */}
             <div className="space-y-4">
               <div className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-neon-blue/20 rounded-lg flex items-center justify-center">
-                  <ApperIcon name="Target" size={16} className="text-neon-blue" />
+<div className="w-8 h-8 bg-pastel-blue/40 rounded-lg flex items-center justify-center">
+                  <ApperIcon name="Target" size={16} className="text-blue-600" />
                 </div>
-                <h3 className="text-xl font-display text-neon-blue">Strategy</h3>
+<h3 className="text-xl font-display text-blue-600">Strategy</h3>
               </div>
-              <p className="text-gray-300 pl-10">
+<p className="text-gray-700 pl-10">
                 Multi-channel approach with AI-powered automation. 
                 Implemented strategic positioning, performance marketing, 
                 and automated customer journey optimization.
@@ -78,22 +78,22 @@ const CaseStudySection = () => {
             {/* Implementation */}
             <div className="space-y-4">
               <div className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-neon-yellow/20 rounded-lg flex items-center justify-center">
-                  <ApperIcon name="Zap" size={16} className="text-neon-yellow" />
+<div className="w-8 h-8 bg-pastel-yellow/40 rounded-lg flex items-center justify-center">
+                  <ApperIcon name="Zap" size={16} className="text-yellow-600" />
                 </div>
-                <h3 className="text-xl font-display text-neon-yellow">Implementation</h3>
+<h3 className="text-xl font-display text-yellow-600">Implementation</h3>
               </div>
-              <ul className="text-gray-300 pl-10 space-y-2">
+<ul className="text-gray-700 pl-10 space-y-2">
                 <li className="flex items-start gap-2">
-                  <div className="w-1.5 h-1.5 bg-neon-green rounded-full mt-2 flex-shrink-0" />
+                  <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
                   <span>Cross-platform marketing automation setup</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <div className="w-1.5 h-1.5 bg-neon-green rounded-full mt-2 flex-shrink-0" />
+                  <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
                   <span>Customer segmentation and personalization</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <div className="w-1.5 h-1.5 bg-neon-green rounded-full mt-2 flex-shrink-0" />
+                  <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
                   <span>Performance tracking and optimization systems</span>
                 </li>
               </ul>
@@ -116,7 +116,7 @@ const CaseStudySection = () => {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
-                  className="p-6 bg-dark-card border border-neon-green/20 rounded-xl hover:border-neon-green/50 transition-all duration-300"
+className="p-6 bg-neutral-card border border-pastel-green/40 rounded-xl hover:border-pastel-green/70 transition-all duration-300"
                 >
                   <MetricCard {...metric} delay={index * 0.1} />
                 </motion.div>
@@ -129,21 +129,21 @@ const CaseStudySection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.5 }}
-              className="p-6 bg-gradient-to-r from-neon-green/10 to-neon-lime/5 border border-neon-green/20 rounded-xl"
+className="p-6 bg-pastel-green/20 border border-pastel-green/40 rounded-xl"
             >
-              <h4 className="text-lg font-display text-neon-green mb-4">Growth Timeline</h4>
+<h4 className="text-lg font-display text-primary mb-4">Growth Timeline</h4>
               <div className="space-y-3 text-sm">
                 <div className="flex justify-between items-center">
-                  <span className="text-gray-400">Month 1-3</span>
-                  <span className="text-white">Foundation & Setup</span>
+<span className="text-gray-600">Month 1-3</span>
+                  <span className="text-neutral-black">Foundation & Setup</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-gray-400">Month 4-8</span>
-                  <span className="text-white">5X Revenue Growth</span>
+<span className="text-gray-600">Month 4-8</span>
+                  <span className="text-neutral-black">5X Revenue Growth</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-gray-400">Month 9-18</span>
-                  <span className="text-neon-green font-semibold">25X Final Result</span>
+<span className="text-gray-600">Month 9-18</span>
+                  <span className="text-primary font-semibold">25X Final Result</span>
                 </div>
               </div>
             </motion.div>

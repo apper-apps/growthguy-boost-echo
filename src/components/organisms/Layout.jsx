@@ -5,7 +5,7 @@ import HomePage from '@/components/pages/HomePage';
 
 const Layout = () => {
   return (
-<div className="min-h-screen bg-light-bg">
+<div className="min-h-screen bg-neutral-light">
       <Header />
       
       <main className="pt-20">
