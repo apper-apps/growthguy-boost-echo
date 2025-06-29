@@ -131,8 +131,8 @@ className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight
                     </div>
                   </div>
                   
-                  {/* Postcard Content */}
-                  <div className="relative z-10 h-full flex flex-col justify-between">
+{/* Postcard Content */}
+                  <div className="relative z-0 hover:z-10 transition-all duration-300 h-full flex flex-col justify-between">
                     {/* Header */}
                     <div className="flex items-center justify-between">
                       <div className="text-neon-green text-sm font-bold">GROWTH RESULTS</div>
