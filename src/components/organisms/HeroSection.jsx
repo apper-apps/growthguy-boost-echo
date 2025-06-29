@@ -68,12 +68,12 @@ className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight
               </motion.p>
             </div>
 
-            {/* CTA Buttons */}
+{/* CTA Button */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="flex flex-col sm:flex-row gap-4"
+              className="flex"
             >
               <Button 
                 variant="primary" 
@@ -82,14 +82,6 @@ className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight
                 className="w-full sm:w-auto"
               >
                 Book Your Growth Strategy Call
-              </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
-                icon="FileText"
-                className="w-full sm:w-auto"
-              >
-                View Case Studies
               </Button>
             </motion.div>
 
