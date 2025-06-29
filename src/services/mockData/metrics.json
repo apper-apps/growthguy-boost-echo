@@ -1,0 +1,44 @@
+[
+  {
+    "Id": 1,
+    "value": 25,
+    "suffix": "X",
+    "label": "Revenue Growth",
+    "animated": true
+  },
+  {
+    "Id": 2,
+    "value": 19,
+    "suffix": "X", 
+    "label": "Facebook ROAS",
+    "animated": true
+  },
+  {
+    "Id": 3,
+    "value": 125,
+    "suffix": "%",
+    "label": "Sales Increase",
+    "animated": true
+  },
+  {
+    "Id": 4,
+    "value": 40,
+    "suffix": "+",
+    "label": "Properties Sold",
+    "animated": true
+  },
+  {
+    "Id": 5,
+    "value": 9,
+    "suffix": "+",
+    "label": "Years Experience",
+    "animated": true
+  },
+  {
+    "Id": 6,
+    "value": 50,
+    "suffix": "+",
+    "label": "Companies Helped",
+    "animated": true
+  }
+]

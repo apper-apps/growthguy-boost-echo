@@ -1,0 +1,41 @@
+[
+  {
+    "Id": 1,
+    "icon": "Rocket",
+    "title": "SaaS Growth",
+    "subtitle": "Product positioning & go-to-market mastery",
+    "features": [
+      "Strategic positioning workshops",
+      "Growth system design", 
+      "AI-powered automation"
+    ],
+    "result": "Helped Ripple.io achieve product-market fit",
+    "link": "#saas-growth"
+  },
+  {
+    "Id": 2,
+    "icon": "ShoppingCart",
+    "title": "E-Commerce Scaling",
+    "subtitle": "Performance marketing & conversion optimization",
+    "features": [
+      "Cross-channel attribution",
+      "Conversion rate optimization",
+      "Automated workflows"
+    ],
+    "result": "25X growth for artisan e-commerce",
+    "link": "#ecommerce-scaling"
+  },
+  {
+    "Id": 3,
+    "icon": "Building",
+    "title": "Real Estate Leads",
+    "subtitle": "Quality lead generation & sales automation",
+    "features": [
+      "Lead generation systems",
+      "Campaign automation",
+      "Sales enablement"
+    ],
+    "result": "Multiple property sellouts in Pune",
+    "link": "#real-estate-leads"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "Id": 1,
+    "number": 1,
+    "icon": "Search",
+    "title": "AUDIT",
+    "description": "Deep-dive analysis of current state",
+    "points": [
+      "Growth barriers identification",
+      "Competitive positioning analysis", 
+      "Revenue optimization opportunities"
+    ]
+  },
+  {
+    "Id": 2,
+    "number": 2,
+    "icon": "Target",
+    "title": "ALIGNMENT",
+    "description": "Strategic clarity & team synchronization",
+    "points": [
+      "Vision & messaging alignment",
+      "Team structure optimization",
+      "Success metrics definition"
+    ]
+  },
+  {
+    "Id": 3,
+    "number": 3,
+    "icon": "Zap",
+    "title": "AUTOMATION",
+    "description": "AI-powered workflow implementation",
+    "points": [
+      "Marketing automation setup",
+      "Lead scoring & nurturing",
+      "Performance tracking systems"
+    ]
+  },
+  {
+    "Id": 4,
+    "number": 4,
+    "icon": "TrendingUp",
+    "title": "SCALE",
+    "description": "Predictable revenue growth execution",
+    "points": [
+      "System optimization",
+      "Performance monitoring",
+      "Continuous improvement"
+    ]
+  }
+]
